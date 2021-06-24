@@ -1,0 +1,406 @@
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+#navigation{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;  
+}
+
+#navLinks{
+position: absolute;
+font-weight: 900;
+
+color: gold;
+display: flex;
+margin-top: 12px;
+margin-left: 25%;
+justify-content: space-between;
+width: 50%;
+text-decoration: none;
+list-style: none;
+z-index: 2;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.container{
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#imageContainer {
+
+    position: relative;
+    background-image: url(heroImage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s;
+    
+}
+
+@keyframes scale {
+
+    0%{
+
+        transform: scale(1.5);
+    }
+
+    100% {
+
+        transform: scale(1);
+    }
+}
+
+#overlay{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+
+}
+
+
+.hero-text{
+
+color: gold;
+font-size: 2rem;
+font-family: sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-direction: column;
+position: absolute;
+top: 55%;
+left: 10%;
+text-transform: uppercase;
+z-index: 2;
+}
+
+#content1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+/*FORM AND BUTTON*/
+
+
+
+#userzip{
+
+    position: relative;
+    bottom: 25vh;
+    left: 10.5vw;
+    height: 30px;
+    z-index: 2;
+    
+}
+
+#zipEnterButton {
+
+    position: relative;
+    border: none;
+    background-color: white;
+    width: 50px;
+    bottom: 25vh;
+    left: 10.5vw;
+    height: 30px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+
+#formStuff{
+
+    display: flex;
+}
+/*FORM AND BUTTON*/
+
+#yoga{
+
+  
+    height: 70%;
+    width: 50%;
+    margin-top: 0vh;
+    margin-left: 0vw;
+    border-radius: 10px;
+}
+
+#contentText {
+    position: relative;
+    display: flex;
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: gold;
+    z-index: 2;
+    top: 15%;
+    left: 60%;
+}
+hr{
+position: relative;
+top: 15%;
+background-color: gold;
+border-style: none;
+border-radius: 5px;
+width: 29vw;
+height: 2px;
+left: 59%;
+z-index: 2;
+}
+
+#content2Background{
+    position: absolute;
+    background-color: rgb(14, 13, 13);
+    width: 600px;
+    height: 500px;
+    border-radius: 100px;
+    top: 70px;
+    left: 770px;
+
+
+}
+
+#content2{
+position: relative;
+display: flex;
+font-size: 1.5rem;
+font-family: sans-serif;
+line-height: 4vh;
+top: 15%;
+color: gold;
+border-style: none;
+border-radius: 5px;
+width: 40vw;
+height: 2px;
+top: 20%;
+left: 55%;
+z-index: 3;
+}
+
+/*-------------MEDIA QUERIES-------------*/
+
+@media (max-width: 500px) {
+
+    #yoga { 
+
+  display: none;
+        
+    } 
+
+    .hero-text {
+        font-size: 30px;
+        top: 20%;
+    }
+
+    #userzip{
+        margin-top: 190px;
+        bottom: 100vh;
+        
+    }
+    
+    #zipEnterButton {
+    
+        margin-top: 190px;
+        bottom: 100vh;
+        
+    
+    }
+
+    #contentText {
+        position: relative;
+        display: flex;
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: gold;
+        z-index: 2;
+        top: 3%;
+        left: 10%;
+    }
+
+
+
+    #content2{
+        position: relative;
+        display: flex;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        line-height: 4vh;
+        top: 15%;
+        color: gold;
+        border-style: none;
+        border-radius: 5px;
+        width: 70vw;
+        height: 2px;
+        top: 10%;
+        left: 10%;
+        z-index: 3;
+        }
+
+        hr{
+            position: relative;
+            top: 5%;
+            background-color: gold;
+            border-style: none;
+            border-radius: 5px;
+            width: 80vw;
+            height: 2px;
+            left: 10%;
+            z-index: 2;
+            }
+        #navLinks{
+            position: absolute;
+            font-weight: 900;
+                
+            color: gold;
+            display: flex;
+            margin-top: 12px;
+            margin-left: 10%;
+            justify-content: space-between;
+            width: 80%;
+            text-decoration: none;
+            list-style: none;
+            z-index: 2;
+            text-transform: uppercase;
+            cursor: pointer;
+             }
+
+
+}
+
+@media (max-width: 800px){
+
+
+
+    #yoga { 
+
+        display: none;
+    } 
+
+    .hero-text {
+        font-size: 30px;
+        top: 20%;
+    }
+
+    #contentText {
+        position: relative;
+        display: flex;
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: gold;
+        z-index: 2;
+        top: 10%;
+        left: 10%;
+    }
+
+
+
+    #content2{
+        position: relative;
+        display: flex;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        line-height: 4vh;
+        color: gold;
+        border-style: none;
+        border-radius: 5px;
+        width: 70vw;
+        height: 2px;
+        top: 15%;
+        left: 10%;
+        z-index: 3;
+        }
+
+        hr{
+            position: relative;
+            top: 10%;
+            background-color: gold;
+            border-style: none;
+            border-radius: 5px;
+            width: 80vw;
+            height: 2px;
+            left: 10%;
+            z-index: 2;
+            }
+        #navLinks{
+            position: absolute;
+            font-weight: 900;
+                
+            color: gold;
+            display: flex;
+            margin-top: 12px;
+            margin-left: 10%;
+            justify-content: space-between;
+            width: 80%;
+            text-decoration: none;
+            list-style: none;
+            z-index: 2;
+            text-transform: uppercase;
+            cursor: pointer;
+             }
+
+             #userzip{
+
+        
+                bottom: 60vh;
+                
+                
+            }
+            
+            #zipEnterButton {
+            
+              
+                bottom: 60vh;
+                
+            
+            }
+
+
+
+}
+
+@media (max-height: 500px) {
+
+    #userzip{
+
+        
+        bottom: 5vh;
+        
+        
+    }
+    
+    #zipEnterButton {
+    
+      
+        bottom: 5vh;
+        
+    
+    }
+
+}
+
+/*-------------MEDIA QUERIES-------------*/

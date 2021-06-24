@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!--NAVIGATION START SECTION-->
+<nav id="navigationHamburger">
+<div id="navSelector"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+
+</nav>
+<!--NAVIGATION END SECTION-->
+<!--MAIN HERO SECTION-->
+
+<div class="container">
+
+    <h1 id="heroText"> FRESH FLOWERS DAILY! </h1>
+<div id="headerBackground"></div>
+<div id="overlay"></div>
+<p id="CTA">See whats in stock!</p>
+<button id="btn">Click Me!</button>
+<div id="imageContainer"></div>
+
+
+
+
+
+
+</div>
+<!--SECOND CONTENT SECTION-->
+<div class="container">
+<!--IMAGE WILL GO HERE-->
+<h1 id="content1Header">Grown locally since 2001</h1>
+<p id="content1Text">Our flowers are grown on location in one of our many cultivated flower gardens. All flowers are organically grown and thus, match the season in which they naturally bloom. Come in to take a look at this seasons collection, or take a look at our catologue online!  </p>
+<div id="content1"></div>
+
+
+</div>
+
+<div class="container">
+    <!--IMAGE WILL GO HERE-->
+
+    <h1 id="content2Header">Contact Us</h1>
+    <p id="content2Text">Need a flower thats not in season? No problem! You can check to see when a flower will become available, or you can make a special request in advance and we can grow it for you in our climate controled greenhouse!</p>
+<div id="contactinfo">
+    <p id="adress"> A: 8517 Flowerbanks Ave. </p>
+    <p id="email"> E: freshflowersdaily@gmail.com</p>
+    <p id="phone"> P: (888)-888-8888</p>
+</div>
+    <div id="content2"></div>
+</div>
+    
+
+<script src="app.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
